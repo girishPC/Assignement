@@ -3,10 +3,14 @@ This project contains simple operations on tasks following
 ## Features
 
 * Crete Task
-* Update Task
-* Delete Task
-* List All Tasks
+![img](https://github.com/girishPC/Assignement/blob/master/Assignement/Create%20Task%20/createTask.png)
 
-### ScreenShots
+* Update Task
+![img](https://github.com/girishPC/Assignement/blob/master/Assignement/Create%20Task%20/editdelete.png)
+* Delete Task
+![img](https://github.com/girishPC/Assignement/blob/master/Assignement/Create%20Task%20/editdelete.png)
+* List All Tasks
 ![img](https://github.com/girishPC/Assignement/blob/master/Assignement/Create%20Task%20/allTasks.png)
+
+
 
