@@ -15,6 +15,10 @@
 		F0C682B11F35B35500352181 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0C682AF1F35B35500352181 /* LaunchScreen.storyboard */; };
 		F0C682BC1F35B35500352181 /* AssignementTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C682BB1F35B35500352181 /* AssignementTests.swift */; };
 		F0C682C71F35B35500352181 /* AssignementUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C682C61F35B35500352181 /* AssignementUITests.swift */; };
+		F0C682D61F35B57B00352181 /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = F0C682D51F35B57B00352181 /* libsqlite3.tbd */; };
+		F0C682D81F35B7C900352181 /* DatabaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C682D71F35B7C900352181 /* DatabaseManager.swift */; };
+		F0C682DD1F35BAC800352181 /* Database in Resources */ = {isa = PBXBuildFile; fileRef = F0C682DC1F35BAC800352181 /* Database */; };
+		F0C682DF1F3638D900352181 /* AddUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0C682DE1F3638D900352181 /* AddUserViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +53,11 @@
 		F0C682C21F35B35500352181 /* AssignementUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AssignementUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0C682C61F35B35500352181 /* AssignementUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssignementUITests.swift; sourceTree = "<group>"; };
 		F0C682C81F35B35500352181 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F0C682D51F35B57B00352181 /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		F0C682D71F35B7C900352181 /* DatabaseManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatabaseManager.swift; sourceTree = "<group>"; };
+		F0C682D91F35B8BB00352181 /* Assignement-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Assignement-Bridging-Header.h"; sourceTree = "<group>"; };
+		F0C682DC1F35BAC800352181 /* Database */ = {isa = PBXFileReference; lastKnownFileType = file; path = Database; sourceTree = "<group>"; };
+		F0C682DE1F3638D900352181 /* AddUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddUserViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C682D61F35B57B00352181 /* libsqlite3.tbd in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +93,7 @@
 				F0C682BA1F35B35500352181 /* AssignementTests */,
 				F0C682C51F35B35500352181 /* AssignementUITests */,
 				F0C682A11F35B35500352181 /* Products */,
+				F0C682D41F35B57B00352181 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +110,17 @@
 		F0C682A21F35B35500352181 /* Assignement */ = {
 			isa = PBXGroup;
 			children = (
+				F0C682DC1F35BAC800352181 /* Database */,
 				F0C682A31F35B35500352181 /* AppDelegate.swift */,
 				F0C682A51F35B35500352181 /* ViewController.swift */,
+				F0C682D71F35B7C900352181 /* DatabaseManager.swift */,
 				F0C682A71F35B35500352181 /* Main.storyboard */,
 				F0C682AD1F35B35500352181 /* Assets.xcassets */,
 				F0C682AF1F35B35500352181 /* LaunchScreen.storyboard */,
 				F0C682B21F35B35500352181 /* Info.plist */,
 				F0C682AA1F35B35500352181 /* Assignement.xcdatamodeld */,
+				F0C682D91F35B8BB00352181 /* Assignement-Bridging-Header.h */,
+				F0C682DE1F3638D900352181 /* AddUserViewController.swift */,
 			);
 			path = Assignement;
 			sourceTree = "<group>";
@@ -126,6 +141,14 @@
 				F0C682C81F35B35500352181 /* Info.plist */,
 			);
 			path = AssignementUITests;
+			sourceTree = "<group>";
+		};
+		F0C682D41F35B57B00352181 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F0C682D51F35B57B00352181 /* libsqlite3.tbd */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,6 +220,7 @@
 					F0C6829F1F35B35500352181 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = NRQ2S5V2KS;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					F0C682B61F35B35500352181 = {
@@ -239,6 +263,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0C682B11F35B35500352181 /* LaunchScreen.storyboard in Resources */,
+				F0C682DD1F35BAC800352181 /* Database in Resources */,
 				F0C682AE1F35B35500352181 /* Assets.xcassets in Resources */,
 				F0C682A91F35B35500352181 /* Main.storyboard in Resources */,
 			);
@@ -265,6 +290,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F0C682DF1F3638D900352181 /* AddUserViewController.swift in Sources */,
+				F0C682D81F35B7C900352181 /* DatabaseManager.swift in Sources */,
 				F0C682AC1F35B35500352181 /* Assignement.xcdatamodeld in Sources */,
 				F0C682A61F35B35500352181 /* ViewController.swift in Sources */,
 				F0C682A41F35B35500352181 /* AppDelegate.swift in Sources */,
@@ -421,11 +448,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NRQ2S5V2KS;
 				INFOPLIST_FILE = Assignement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.girish.Assignement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignement/Assignement-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -434,11 +464,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = NRQ2S5V2KS;
 				INFOPLIST_FILE = Assignement/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.girish.Assignement;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Assignement/Assignement-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
